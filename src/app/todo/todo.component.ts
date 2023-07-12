@@ -11,6 +11,8 @@ import { Model } from '../model';
 export class TodoComponent {
   constructor() { } 
 
+  message = "";
+
   model = new Model();
   
 
@@ -22,7 +24,8 @@ export class TodoComponent {
     return this.model.items; 
   }
 
-  addItem(txtItem: any) {
-    console.log(txtItem);
+  addItem(value: string) {
+    //console.log(value);
+    this.message = value;
   }
 }
