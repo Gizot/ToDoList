@@ -1,12 +1,17 @@
+import { TodoItem } from "./todoitem";
+
+
 export class Model {
    
-    constructor() {
-       
-       
-    }
-}
-export class ToDoItem {
-    
+    name: string;
+    items: TodoItem [];
 
-    
+    constructor() {
+        this.name = "Gizem";
+        this.items = [
+            {description: "kahvaltı", action: "yes"},
+            {description: "spor", action: "no"},
+            {description: "alışveriş", action: "yes"},
+        ];
+    }
 }
