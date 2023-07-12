@@ -25,7 +25,12 @@ export class TodoComponent {
   }
 
   addItem(value: string) {
-    //console.log(value);
-    this.message = value;
+
+    if(value!="") {
+      this.model.items.push({description: value, action: "no"},)
+    } else {
+      alert("Bilgileri giriniz. ")
+    }
+   
   }
 }

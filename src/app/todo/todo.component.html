@@ -5,6 +5,7 @@
            <div class="input-group mb-3">
             <input #txtItem type="text" class="form-control" (keyup.enter)="addItem(txtItem.value)">
             <!-- (blur)="addItem(txtItem.value)"  event in dışında biryere tıklayınca işlemi gerçekleştirir.-->
+            <!--Eğer hem blur hem click eklersen 2 kere ekler veriyi-->
             <button class="btn btn-outline-primary" (click)="addItem(txtItem.value); txtItem.value=''">Add</button>
            </div>
            {{message}}
